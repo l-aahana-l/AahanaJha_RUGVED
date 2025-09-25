@@ -1,11 +1,9 @@
 def fibonacci(n):
-    if n == 0:
+    if n == 1:
         return 0
-    elif n == 1:
+    elif n == 2:
         return 1
     else:
         return fibonacci(n-1) + fibonacci(n-2)
-term= int(input("Enter the number of terms: "))
-series = [fibonacci(i) for i in range(term)]
-for num in series:
-    print(num, end=" ")
+nth= int(input("Enter the nth position: "))
+print("THe Fibonacci value at",nth,"is",fibonacci(nth))
